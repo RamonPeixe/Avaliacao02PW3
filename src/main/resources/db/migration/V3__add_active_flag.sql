@@ -1,0 +1,2 @@
+ALTER TABLE repairs
+    ADD COLUMN active BOOLEAN DEFAULT TRUE;
