@@ -17,12 +17,14 @@ public class Avaliacao02Application {
 
 		PasswordEncoder encoder = new BCryptPasswordEncoder();
 
-		//Gera Hash para senha "senha123" para criar um usuário no h2 com a senha criptografada
+		//Gera Hash para senha "senha123" para criar um usuário no h2 com a senha criptografada (caso queira outra senha é só trocar a variável)
 		String minhaSenha = "senha123";
 
 		String hash = encoder.encode(minhaSenha);
 		System.out.println("Sua senha '" + minhaSenha + "' em hash bcrypt é:");
 		System.out.println(hash);
+
+		//Foi criado já um usuário especialmente pra você professor. Usuário: carlao Senha: meda10
 	}
 
 }
